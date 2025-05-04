@@ -1,7 +1,8 @@
 import React from 'react';
 import WhatsappLogo from '../assets/images/WhatsApp logo.png'
 import InstagramLogo from "../assets/images/instagram logo.png"
-import Logo from '../assets/images/Logo1.webp'
+import Logo from '../assets/images/Logo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,12 +18,12 @@ const Footer = () => {
 
         {/* Center Section: Quick Links */}
         <div className="flex space-x-6 text-lg">
-          <a href="HomePage.html" className="hover:underline">Home</a>
-          <a href="Books.html" className="hover:underline">Books</a>
-          <a href="Cart.html" className="hover:underline">Cart</a>
-          <a href="Login.html" className="hover:underline">Login</a>
+        <Link className="mr-[50px] hover:underline" to='/homepage' >Home</Link>
+        <Link className="mr-[50px] hover:underline" to="/books">Books</Link>
+        <Link className="mr-[50px] hover:underline" to="/cart" >Cart</Link>
+        <Link className="mr-[50px] hover:underline" to='/login'>Logout</Link>
         </div>
-
+        
         {/* Right Section: Social Media */}
         <div className="flex space-x-4">
           <a href="#" aria-label="Facebook">
